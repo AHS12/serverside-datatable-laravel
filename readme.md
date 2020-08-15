@@ -8,6 +8,8 @@ Implementation of Server Side Datatable with 5k data
 
 2.laravel-datatables [yajra/laravel-datatables](https://github.com/yajra/laravel-datatables)
 
+3.PACE Loader [PACE](https://github.hubspot.com/pace/docs/welcome/)
+
 ## Screenshots
 ![Screenshot 1](pic_1.png)
 
