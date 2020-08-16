@@ -54,6 +54,7 @@ class HomeController extends Controller
         //row customization
 
         return Datatables::of($users)
+        ->addIndexColumn()
         ->setRowClass(function ($user) {
             return $user->status == 1 ?  : 'alert-warning';
         })

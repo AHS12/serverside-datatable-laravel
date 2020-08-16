@@ -33,6 +33,7 @@
                 <table id="example" class="table table-bordered" style="width:100%">
                     <thead>
                         <tr>
+                            <th>#</th>
                             <th>Id</th>
                             <th>Name</th>
                             <th>Email</th>
@@ -42,6 +43,7 @@
                     </thead>
 
                     <tfoot>
+                        <th>#</th>
                         <th>Id</th>
                         <th>Name</th>
                         <th>Email</th>
@@ -79,7 +81,12 @@
                 "processing": true,
                 "serverSide": true,
                 "ajax": "{{ url('/users') }}",
-                columns: [{
+                columns: [
+                    {
+                        "data": 'DT_RowIndex',
+                        searchable: false
+                    },
+                    {
                         data: 'id',
                         name: 'id'
                     },
